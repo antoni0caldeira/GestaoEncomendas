@@ -78,7 +78,19 @@ namespace GestaoEncomendas
 
         private void Entregar()
         {
-            throw new NotImplementedException();
+            if (dgvRegisto.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Selecione uma encomenda", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            int selectedIndex = dgvRegisto.SelectedRows[0].Index;
+            Encomenda selectedEncomenda = encomendas[selectedIndex];
+
+            encomendas.RemoveAt(selectedIndex);
+            entregues.Add(selectedEncomenda);
+
+            Atualizar();
 
         }
 
