@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtpData = new System.Windows.Forms.DateTimePicker();
+            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.txtProduto = new System.Windows.Forms.TextBox();
+            this.btnInserir = new System.Windows.Forms.Button();
+            this.btnEntregar = new System.Windows.Forms.Button();
+            this.btnVerEntregas = new System.Windows.Forms.Button();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.dgvRegisto = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,82 +45,82 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRegisto)).BeginInit();
             this.SuspendLayout();
             // 
-            // dateTimePicker1
+            // dtpData
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(90, 27);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 0;
+            this.dtpData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpData.Location = new System.Drawing.Point(90, 27);
+            this.dtpData.Name = "dtpData";
+            this.dtpData.Size = new System.Drawing.Size(200, 20);
+            this.dtpData.TabIndex = 0;
             // 
-            // textBox1
+            // txtCliente
             // 
-            this.textBox1.Location = new System.Drawing.Point(90, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtCliente.Location = new System.Drawing.Point(90, 69);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(200, 20);
+            this.txtCliente.TabIndex = 1;
             // 
-            // textBox2
+            // txtProduto
             // 
-            this.textBox2.Location = new System.Drawing.Point(90, 125);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(424, 140);
-            this.textBox2.TabIndex = 2;
+            this.txtProduto.Location = new System.Drawing.Point(90, 125);
+            this.txtProduto.Multiline = true;
+            this.txtProduto.Name = "txtProduto";
+            this.txtProduto.Size = new System.Drawing.Size(424, 140);
+            this.txtProduto.TabIndex = 2;
             // 
-            // button1
+            // btnInserir
             // 
-            this.button1.Location = new System.Drawing.Point(90, 321);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnInserir.Location = new System.Drawing.Point(90, 321);
+            this.btnInserir.Name = "btnInserir";
+            this.btnInserir.Size = new System.Drawing.Size(75, 23);
+            this.btnInserir.TabIndex = 3;
+            this.btnInserir.Text = "Inserir";
+            this.btnInserir.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnEntregar
             // 
-            this.button2.Location = new System.Drawing.Point(259, 321);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEntregar.Location = new System.Drawing.Point(259, 321);
+            this.btnEntregar.Name = "btnEntregar";
+            this.btnEntregar.Size = new System.Drawing.Size(75, 23);
+            this.btnEntregar.TabIndex = 4;
+            this.btnEntregar.Text = "Entregue";
+            this.btnEntregar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnVerEntregas
             // 
-            this.button3.Location = new System.Drawing.Point(439, 321);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnVerEntregas.Location = new System.Drawing.Point(439, 321);
+            this.btnVerEntregas.Name = "btnVerEntregas";
+            this.btnVerEntregas.Size = new System.Drawing.Size(75, 23);
+            this.btnVerEntregas.TabIndex = 5;
+            this.btnVerEntregas.Text = "Ver Entregas";
+            this.btnVerEntregas.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtValor
             // 
-            this.textBox3.Location = new System.Drawing.Point(90, 283);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtValor.Location = new System.Drawing.Point(90, 283);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(200, 20);
+            this.txtValor.TabIndex = 6;
             // 
-            // dataGridView1
+            // dgvRegisto
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvRegisto.AllowUserToAddRows = false;
+            this.dgvRegisto.AllowUserToDeleteRows = false;
+            this.dgvRegisto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRegisto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(90, 383);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(755, 207);
-            this.dataGridView1.TabIndex = 7;
+            this.dgvRegisto.Location = new System.Drawing.Point(90, 383);
+            this.dgvRegisto.Name = "dgvRegisto";
+            this.dgvRegisto.ReadOnly = true;
+            this.dgvRegisto.Size = new System.Drawing.Size(755, 207);
+            this.dgvRegisto.TabIndex = 7;
             // 
             // Column1
             // 
@@ -197,17 +197,17 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dgvRegisto);
+            this.Controls.Add(this.txtValor);
+            this.Controls.Add(this.btnVerEntregas);
+            this.Controls.Add(this.btnEntregar);
+            this.Controls.Add(this.btnInserir);
+            this.Controls.Add(this.txtProduto);
+            this.Controls.Add(this.txtCliente);
+            this.Controls.Add(this.dtpData);
             this.Name = "frmRegisto";
             this.Text = "Gestão de Encomendas";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRegisto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,14 +215,14 @@
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DateTimePicker dtpData;
+        private System.Windows.Forms.TextBox txtCliente;
+        private System.Windows.Forms.TextBox txtProduto;
+        private System.Windows.Forms.Button btnInserir;
+        private System.Windows.Forms.Button btnEntregar;
+        private System.Windows.Forms.Button btnVerEntregas;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.DataGridView dgvRegisto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
