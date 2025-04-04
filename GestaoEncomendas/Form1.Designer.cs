@@ -79,6 +79,7 @@
             this.btnInserir.TabIndex = 3;
             this.btnInserir.Text = "Inserir";
             this.btnInserir.UseVisualStyleBackColor = true;
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // btnEntregar
             // 
@@ -88,6 +89,7 @@
             this.btnEntregar.TabIndex = 4;
             this.btnEntregar.Text = "Entregue";
             this.btnEntregar.UseVisualStyleBackColor = true;
+            this.btnEntregar.Click += new System.EventHandler(this.btnEntregar_Click);
             // 
             // btnVerEntregas
             // 
@@ -97,6 +99,7 @@
             this.btnVerEntregas.TabIndex = 5;
             this.btnVerEntregas.Text = "Ver Entregas";
             this.btnVerEntregas.UseVisualStyleBackColor = true;
+            this.btnVerEntregas.Click += new System.EventHandler(this.btnVerEntregas_Click);
             // 
             // txtValor
             // 
